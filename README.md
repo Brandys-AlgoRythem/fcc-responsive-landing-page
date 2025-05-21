@@ -1,14 +1,12 @@
-# freeCodeCamp - Product Landing Page Project
+# Responsive Product Landing Page
 
-This project is a product landing page designed as part of the freeCodeCamp Responsive Web Design Certification. It showcases the use of HTML5 and CSS3 to create an engaging and responsive page aimed at highlighting a product's features and encouraging user action.
-
-The page includes elements like a header with navigation, product feature descriptions, embedded media (like a video), and pricing options.
+This project is a responsive landing page designed to showcase a product. It effectively utilizes HTML5 to structure product features, media elements, and pricing information, while CSS3 is used for styling and ensuring the layout adapts to various devices, aiming to engage users and drive action.
 
 ## Live Demo
 
 View the live project here:
 [https://brandys-algorythem.github.io/fcc-responsive-landing-page/](https://brandys-algorythem.github.io/fcc-responsive-landing-page/)
-*(Please ensure this project is created and this link is correct for your setup.)*
+*(Please ensure this link reflects your actual deployed project.)*
 
 ## Technologies Used
 * HTML5
@@ -16,4 +14,4 @@ View the live project here:
 
 ## Repository Link
 [https://github.com/brandys-algorythem/fcc-responsive-landing-page](https://github.com/brandys-algorythem/fcc-responsive-landing-page)
-*(Ensure this repository exists or update the link.)*
+*(Ensure this repository link is correct.)*
