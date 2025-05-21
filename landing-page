@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComfyCloud Diapers - Ultimate Comfort for Your Little One</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header id="header">
+        <div class="logo-container">
+            <img id="header-img" src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="ComfyCloud Diapers Logo">
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+                <li><a class="nav-link" href="#pricing">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Experience Cloud-Like Comfort for Your Baby</h1>
+            <p>ComfyCloud Diapers - Gentle, Absorbent, and Eco-Friendly.</p>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input type="email" id="email" name="email" placeholder="Enter your email for exclusive offers" required>
+                <input type="submit" id="submit" value="Get Offers">
+            </form>
+        </section>
+
+        <section id="features" class="page-section">
+            <h2>Why Choose ComfyCloud?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-feather-alt feature-icon"></i>
+                    <h3>Ultra-Soft Comfort</h3>
+                    <p>Made with the softest, plant-based materials for your baby's delicate skin.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt feature-icon"></i>
+                    <h3>Superior Leak Protection</h3>
+                    <p>Our advanced core technology provides up to 12 hours of leak-proof dryness.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-leaf feature-icon"></i>
+                    <h3>Eco-Friendly Design</h3>
+                    <p>Crafted with sustainable materials and biodegradable components where possible.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="page-section">
+            <h2>See ComfyCloud in Action</h2>
+            <div class="video-container">
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            <p>Our diapers are designed with both baby and parent in mind. Watch our video to learn more about the innovative technology and care that goes into every ComfyCloud diaper.</p>
+        </section>
+
+        <section id="pricing" class="page-section">
+            <h2>Join the ComfyCloud Family</h2>
+            <p>Choose the perfect plan for your little one and enjoy convenience and savings.</p>
+            <div class="pricing-grid">
+                <div class="pricing-tier">
+                    <h3>Starter Pack</h3>
+                    <p class="price">$29.99/month</p>
+                    <ul>
+                        <li>Approx. 120 Diapers</li>
+                        <li>Perfect for Newborns</li>
+                        <li>Cancel Anytime</li>
+                    </ul>
+                    <button class="btn">Select Plan</button>
+                </div>
+                <div class="pricing-tier popular">
+                    <h3>Growth Bundle</h3>
+                    <p class="price">$54.99/month</p>
+                    <ul>
+                        <li>Approx. 240 Diapers</li>
+                        <li>Most Popular Choice</li>
+                        <li>Flexible Delivery</li>
+                        <li>Includes Free Wipes</li>
+                    </ul>
+                    <button class="btn">Select Plan</button>
+                </div>
+                <div class="pricing-tier">
+                    <h3>Toddler Time</h3>
+                    <p class="price">$49.99/month</p>
+                    <ul>
+                        <li>Approx. 180 Diapers</li>
+                        <li>For Active Toddlers</li>
+                        <li>Easy Size Adjustments</li>
+                    </ul>
+                    <button class="btn">Select Plan</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ComfyCloud Diapers. All Rights Reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+</body>
+</html>
+CSS
+/* Basic Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    padding-top: 70px; /* Space for fixed header */
+}
+
+h1, h2, h3 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.page-section {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.page-section h2 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+
+/* Header & Navigation */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex; /* Requirement: Use flexbox */
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    height: 70px;
+}
+
+.logo-container {
+    flex-shrink: 0; /* Prevent logo from shrinking */
+}
+
+#header-img {
+    max-height: 50px; /* Adjust as needed */
+    width: auto;
+}
+
+#nav-bar ul {
+    list-style: none;
+    display: flex; /* Requirement: Use flexbox */
+}
+
+#nav-bar li {
+    margin-left: 20px;
+}
+
+#nav-bar .nav-link {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+#nav-bar .nav-link:hover {
+    color: #2980b9;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(rgba(236, 240, 241, 0.8), rgba(236, 240, 241, 0.8)), url('https://via.placeholder.com/1500x600.png?text=Soft+Baby+Background') no-repeat center center/cover;
+    /* Replace with an actual hero image URL */
+    color: #2c3e50;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 2.8em;
+    margin-bottom: 15px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+/* Form */
+#form {
+    display: flex; /* Requirement: Use flexbox */
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between input and button */
+}
+
+#email {
+    padding: 12px 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 300px;
+    max-width: 70%;
+}
+
+#submit {
+    padding: 12px 25px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #2980b9;
+}
+
+/* Features Section */
+.features-grid {
+    display: flex; /* Requirement: Use flexbox */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.feature-item {
+    flex-basis: calc(33.333% - 20px); /* Adjust for gap */
+    min-width: 250px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.feature-icon {
+    font-size: 2.5em;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.feature-item h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* How It Works / Video Section */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Pricing Section */
+.pricing-grid {
+    display: flex; /* Requirement: Use flexbox */
+    justify-content: center;
+    align-items: stretch; /* Make tiers same height if content differs */
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.pricing-tier {
+    flex-basis: calc(33.333% - 30px); /* Adjust for gap */
+    min-width: 280px;
+    max-width: 320px;
+    background-color: #ffffff;
+    border: 1px solid #ecf0f1;
+    border-radius: 8px;
+    padding: 30px 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-tier:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.pricing-tier.popular {
+    border-top: 5px solid #3498db;
+}
+
+.pricing-tier h3 {
+    font-size: 1.6em;
+    color: #3498db;
+}
+
+.pricing-tier .price {
+    font-size: 2em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 15px 0;
+}
+
+.pricing-tier ul {
+    list-style: none;
+    margin-bottom: 25px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.pricing-tier ul li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.pricing-tier ul li::before {
+    content: '\f00c'; /* Font Awesome check icon */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: #2ecc71;
+    position: absolute;
+    left: 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #e67e22;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin-top: auto; /* Pushes button to bottom in flex container */
+}
+
+.btn:hover {
+    background-color: #d35400;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query Requirement */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 10px;
+    }
+    body {
+        padding-top: 120px; /* Adjust for taller header */
+    }
+
+    #nav-bar ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #nav-bar li {
+        margin-left: 0;
+        margin-bottom: 5px;
+        width: 100%;
+        text-align: center;
+    }
+    #nav-bar .nav-link {
+        display: block;
+        padding: 8px;
+    }
+
+    #hero h1 {
+        font-size: 2.2em;
+    }
+
+    #form {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #email, #submit {
+        width: 100%;
+    }
+
+    .features-grid, .pricing-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-item, .pricing-tier {
+        flex-basis: 100%; /* Full width on small screens */
+        max-width: 400px; /* Optional: constrain width */
+    }
+}
